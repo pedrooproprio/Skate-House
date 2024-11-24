@@ -1,0 +1,142 @@
+       
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000 ;
+}
+ header {
+              width: 100%;
+              height: 60px;
+              background-color: #FFFFFF;
+              box-shadow:; /*0px 5px 20px #000;  bota uma sobra no menu */
+              padding: 10px; /* para nao deixar os elementos colados */
+              display: flex; /* automaticamente viram flex itens, deixa um ao lado do outro. Nao se aplica aos filhos dos filhos */
+              align-items: center; /* para centralizar os box menu no centro */
+              flex-wrap: wrap; /* caso um box se choque com outro */
+             justify-content: center; /*deixa o menu no centro */
+             font-family: Arial, sans-serif;
+           
+}
+
+
+.menu{
+    list-style: none;
+    display: flex; /* deixando um ao lado do outro */
+    flex-wrap: wrap; /* caso um box se choque com outro */
+}
+
+.menu li a {
+    color: #000;
+    display: block; /* se tratando de um elemnto de linha, queremos transformar em um elemnto de caixa */
+    text-decoration: none; /* tirando o sublinhado do link */
+    padding: 10px 20px 10px 20px;/*controla o espaço da sombra em cima do menu*/
+    border-radius: 10px;
+    margin-left: 10px;
+    list-style: none;
+    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
+}
+
+.menu li a:hover{
+    color: #fff;
+    display: block; /* se tratando de um elemnto de linha,  queremos transformar em um elemnto de caixa */
+    text-decoration: none; /* tirando o sublinhado do link */
+    background-color: #333;
+    margin-left: 10px;
+}
+
+.slider {
+    position: relative;
+    height: 680px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 20px; /* deixando a borda redonda */
+    background-color: #c51e1e;
+
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container{
+    max-width: 2000px;
+    margin: 0 auto; /* para centralizar as imagens*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div{
+    flex: 1 1 400px ; /* ajustando minha flex item dentro de um container maior*/
+    margin: 10px;
+}
+
+
+.conteudo {
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    
+}
+
+
+
+.imagem-circular {
+    width: 350px; /* Define a largura da imagem */
+    height: 350px; /* Define a altura da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    border: 2px solid #c51e1e; /* Adiciona uma borda opcional */
+    margin: 0 auto; /* para centralizar as imagens*/
+    display: flex;
+  }
+  
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+a:hover {
+     background-color: #575757; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
