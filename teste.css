@@ -10,18 +10,39 @@ body{
     height: 100vh;
     background-color: #000 ;
 }
- header {
-              width: 100%;
-              height: 60px;
-              background-color: #FFFFFF;
-              box-shadow:; /*0px 5px 20px #000;  bota uma sobra no menu */
-              padding: 10px; /* para nao deixar os elementos colados */
-              display: flex; /* automaticamente viram flex itens, deixa um ao lado do outro. Nao se aplica aos filhos dos filhos */
-              align-items: center; /* para centralizar os box menu no centro */
-              flex-wrap: wrap; /* caso um box se choque com outro */
-             justify-content: center; /*deixa o menu no centro */
-             font-family: Arial, sans-serif;
-           
+
+
+.info {
+    background-color: #f8f9fa; /* Cor de fundo discreta */
+    font-size: 12px; /* Letras pequenas */
+    text-align: center; /* Centraliza o texto */
+    display: flex;
+    justify-content:center; /*deixa o menu no centro */
+    list-style: none;
+}
+
+.info li{
+    margin: 0 15px; /* Espaço horizontal entre os itens */
+}
+
+.info li a{
+    text-decoration: none;
+    color: #000; /* Cor do texto */
+    border-radius: 5px;
+}
+
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow:; 0px 5px 20px #000; /* bota uma sombra no menu */
+    padding: 10px; /* para nao deixar os elementos colados */
+    display: flex; /* automaticamente viram flex itens, deixa um ao lado do outro. Nao se aplica aos filhos dos filhos */
+    align-items: center; /* para centralizar os box menu no centro */
+    flex-wrap: wrap; /* caso um box se choque com outro */
+    justify-content: center; /*deixa o menu no centro */
+    font-family: Arial, sans-serif;           
 }
 
 
@@ -31,6 +52,8 @@ body{
     flex-wrap: wrap; /* caso um box se choque com outro */
 }
 
+
+/*parte dos botoes do menu desregula a posiçao a cor */
 .menu li a {
     color: #000;
     display: block; /* se tratando de um elemnto de linha, queremos transformar em um elemnto de caixa */
@@ -39,16 +62,13 @@ body{
     border-radius: 10px;
     margin-left: 10px;
     list-style: none;
-    z-index: 1000; /* Garante que o submenu fique acima de outros elementos */
 }
 
-.menu li a:hover{
-    color: #fff;
-    display: block; /* se tratando de um elemnto de linha,  queremos transformar em um elemnto de caixa */
-    text-decoration: none; /* tirando o sublinhado do link */
-    background-color: #333;
-    margin-left: 10px;
+
+.menu ul li a{    /*deixa o submenu invisivel*/
+    display: none; /* Oculta inicialmente */
 }
+
 
 .slider {
     position: relative;
@@ -115,7 +135,7 @@ h1{
     border: 2px solid #c51e1e; /* Adiciona uma borda opcional */
     margin: 0 auto; /* para centralizar as imagens*/
     display: flex;
-  }
+}
   
 
 
@@ -126,7 +146,7 @@ img {
 
 
 a:hover {
-     background-color: #575757; /* Cor de fundo ao passar o mouse */
+    background-color: #575757; /* Cor de fundo ao passar o mouse */
 }
 
 
